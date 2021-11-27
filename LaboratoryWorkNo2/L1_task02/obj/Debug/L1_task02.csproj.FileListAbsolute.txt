@@ -1,0 +1,7 @@
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\bin\Debug\L1_task02.exe.config
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\bin\Debug\L1_task02.exe
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\bin\Debug\L1_task02.pdb
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\obj\Debug\L1_task02.csproj.SuggestedBindingRedirects.cache
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\obj\Debug\L1_task02.csproj.CoreCompileInputs.cache
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\obj\Debug\L1_task02.exe
+D:\Cases\For clients\Profi\Светлана Тарасова C#\LaboratoryWorkNo2\L1_task02\obj\Debug\L1_task02.pdb
