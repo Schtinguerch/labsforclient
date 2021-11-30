@@ -1,0 +1,26 @@
+teams=5
+
+Manchester=023
+Real Madrid=190
+Barcelona=552
+Uvensus= 247
+Arsenal=926
+
+matches=16
+
+Uvensus     | 3 : 8 | Arsenal
+Manchester  | 4 : 7 | Arsenal
+Uvensus     | 9 : 5 | Real Madrid
+Uvensus     | 6 : 2 | Barcelona
+Uvensus     | 5 : 2 | Arsenal
+Barcelona   | 4 : 2 | Manchester
+Manchester  | 5 : 1 | Real Madrid
+Barcelona   | 3 : 1 | Uvensus
+Uvensus     | 8 : 6 | Manchester
+Real Madrid | 9 : 4 | Arsenal
+Arsenal     | 0 : 1 | Barcelona
+Barcelona   | 0 : 1 | Real Madrid
+Barcelona   | 5 : 0 | Uvensus
+Real Madrid | 8 : 6 | Uvensus
+Uvensus     | 3 : 3 | Manchester
+Manchester  | 0 : 4 | Barcelona

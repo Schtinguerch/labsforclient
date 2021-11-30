@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9048a104-2d46-4c98-bb4b-136798b11cb9": {
+      "ProjectGuid": "9048a104-2d46-4c98-bb4b-136798b11cb9",
+      "DisplayName": "LaboratoryWorkNo9",
+      "ColorIndex": 0
+    },
+    "4802cfb5-e5e2-4db0-bcea-83d61c9dc5e6": {
+      "ProjectGuid": "4802cfb5-e5e2-4db0-bcea-83d61c9dc5e6",
+      "DisplayName": "Task01",
+      "ColorIndex": 1
+    },
+    "62ab5adb-f0aa-473b-9722-1037ae39ac8e": {
+      "ProjectGuid": "62ab5adb-f0aa-473b-9722-1037ae39ac8e",
+      "DisplayName": "Task02",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
