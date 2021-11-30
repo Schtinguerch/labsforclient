@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "51d34a14-f5c1-404e-bc2c-6534300dac4e": {
+      "ProjectGuid": "51d34a14-f5c1-404e-bc2c-6534300dac4e",
+      "DisplayName": "LaboratoryWorkNo8",
+      "ColorIndex": 0
+    },
+    "b53ad1da-5306-403b-996c-640654f3b97e": {
+      "ProjectGuid": "b53ad1da-5306-403b-996c-640654f3b97e",
+      "DisplayName": "Task01",
+      "ColorIndex": 1
+    },
+    "a67e95a4-afbc-4587-9178-9d03516d8e47": {
+      "ProjectGuid": "a67e95a4-afbc-4587-9178-9d03516d8e47",
+      "DisplayName": "Task02",
+      "ColorIndex": 2
+    },
+    "ba559b36-e8d4-4150-bb0d-474582130907": {
+      "ProjectGuid": "ba559b36-e8d4-4150-bb0d-474582130907",
+      "DisplayName": "Task03",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
