@@ -7,65 +7,25 @@ namespace L3_task05
     {
         static void Main(string[] args)
         {
-            double[] array = InputArray();
-            double[] sortedArray = SortEvenIndexes(array);
+            const int count = 10;
+            double[] array = new double[count] { 9, 9, 7, 7, 8, 8, 9, 9, 6, 6 };
 
-            WriteLine("Массив с упорядоченными чётными индексами:");
-            PrintArray(sortedArray);
-        }
+            WriteLine("Входной массив:");
+            for (int i = 0; i < count; i++)
+                WriteLine($"[{i}] = {array[i]}");
 
-        static double[] SortEvenIndexes(double[] array)
-        {
             for (int i = 0; i < array.Length; i += 2)
-            {
-                for (int j = 0; j < array.Length - 2; j++)
-                {
+                for (int j = 0; j < array.Length - 2; j += 2)
                     if (((array.Length - j) >= 2) && (array[j] > array[j + 2]))
                     {
                         double temp = array[j + 2];
                         array[j + 2] = array[j];
                         array[j] = temp;
                     }
-                }
-            }
 
-            return array;
-        }
-
-        static double[] InputArray()
-        {
-            Write("Введите размер массива: ");
-            int itemCount = int.Parse(ReadLine());
-
-            double[] array = new double[itemCount];
-
-            WriteLine($"Введите {itemCount} элементов массива:");
-
-            for (int i = 0; i < itemCount; i++)
-            {
-                Write($"элемент [{i}]: ");
-                array[i] = double.Parse(ReadLine());
-            }
-
-            return array;
-        }
-
-        static void PrintArray(double[] array)
-        {
-            if (array.Length == 0)
-            {
-                WriteLine("* Массив пустой *");
-            }
-
-            else
-            {
-                WriteLine($"Массив из {array.Length} элементов:");
-
-                for (int i = 0; i < array.Length; i++)
-                {
-                    WriteLine($"[{i}] = {array[i]}");
-                }
-            }
+            WriteLine("Массив с упорядоченными чётными индексами:");
+            for (int i = 0; i < count; i++)
+                WriteLine($"[{i}] = {array[i]}");
         }
     }
 }

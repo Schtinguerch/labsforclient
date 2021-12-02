@@ -8,35 +8,17 @@ namespace L3_task09
     {
         static void Main(string[] args)
         {
-            double[] array = InputArray();
-            int orderLength = FindLongestOrder(array);
+            const int count = 10;
+            double[] array = new double[count] { 4, 8, 2, 3, 0, 7, 8, 9, 1, 3 };
 
-            WriteLine($"Длина самой длинной упорядоченной последовательности = {orderLength}");
-        }
+            WriteLine("Входной массив:");
+            for (int i = 0; i < count; i++)
+                WriteLine($"[{i}] = {array[i]}");
 
-        static int FindLongestOrder(double[] array)
-        {
             int orderLength = 1, maxOrderLength = 1;
             for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] >= array[i - 1])
-                {
-                    orderLength++;
-                }
-
-                else
-                {
-                    maxOrderLength = Max(orderLength, maxOrderLength); 
-                    orderLength = 1;
-                }
-            }
-
-            maxOrderLength = Max(orderLength, maxOrderLength);
-            orderLength = 1;
-
-            for (int i = 1; i < array.Length; i++)
-            {
-                if (array[i] <= array[i - 1])
                 {
                     orderLength++;
                 }
@@ -49,25 +31,7 @@ namespace L3_task09
             }
 
             maxOrderLength = Max(orderLength, maxOrderLength);
-            return maxOrderLength;
-        }
-
-        static double[] InputArray()
-        {
-            Write("Введите размер массива: ");
-            int itemCount = int.Parse(ReadLine());
-
-            double[] array = new double[itemCount];
-
-            WriteLine($"Введите {itemCount} элементов массива:");
-
-            for (int i = 0; i < itemCount; i++)
-            {
-                Write($"элемент [{i}]: ");
-                array[i] = double.Parse(ReadLine());
-            }
-
-            return array;
+            WriteLine($"Длина самой длинной упор. последовательности = {maxOrderLength}");
         }
     }
 }

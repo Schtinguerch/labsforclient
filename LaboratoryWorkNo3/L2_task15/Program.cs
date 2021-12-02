@@ -7,78 +7,32 @@ namespace L2_task15
     {
         static void Main(string[] args)
         {
-            Write("Массив A, ");
-            double[] a = InputArray();
+            const int n = 6, m = 4;
+            double[] a = new double[n] { 1, 2, 3, 4, 5, 6 };
+            double[] b = new double[m] { 111, 222, 333, 444 };
 
-            Write("Массив B, ");
-            double[] b = InputArray();
+            WriteLine("Массив A:");
+            for (int i = 0; i < n; i++) WriteLine($"[{i}] = {a[i]}");
 
-            Write("Введите K (индекс вставки массива B в A): ");
+            WriteLine("\nМассив B:");
+            for (int i = 0; i < m; i++) WriteLine($"[{i}] = {b[i]}");
+
+            Write("\nВведите K (индекс вставки массива B в A): ");
             int k = int.Parse(ReadLine());
 
-            double[] c = InsertArrayIntoArray(a, b, k);
+            double[] c = new double[n + m];
 
-            WriteLine("Склеенный массив:");
-            PrintArray(c);
-        }
+            for (int i = 0; i <= k; i++) c[i] = a[i];
+            for (int i = 0; i < b.Length; i++) c[k + 1 + i] = b[i];
 
-        static double[] InputArray()
-        {
-            Write("Введите размер массива: ");
-            int itemCount = int.Parse(ReadLine());
-
-            double[] array = new double[itemCount];
-
-            WriteLine($"Введите {itemCount} элементов массива:");
-
-            for (int i = 0; i < itemCount; i++)
+            for (int i = k + 1; i < a.Length; i++)
             {
-                Write($"элемент [{i}]: ");
-                array[i] = double.Parse(ReadLine());
+                int index = i + b.Length;
+                c[index] = a[i];
             }
 
-            return array;
-        }
-
-        static void PrintArray(double[] array)
-        {
-            if (array.Length == 0)
-            {
-                WriteLine("* Массив пустой *");
-            }
-
-            else
-            {
-                WriteLine($"Массив из {array.Length} элементов:");
-
-                for (int i = 0; i < array.Length; i++)
-                {
-                    WriteLine($"[{i}] = {array[i]}");
-                }
-            }
-        }
-
-        static double[] InsertArrayIntoArray(double[] baseArray, double[] insertingArray, int k)
-        {
-            double[] bigArray = new double[baseArray.Length + insertingArray.Length];
-
-            for (int i = 0; i <= k; i++)
-            {
-                bigArray[i] = baseArray[i];
-            }
-
-            for (int i = 0; i < insertingArray.Length; i++)
-            {
-                bigArray[k + 1 + i] = insertingArray[i];
-            }
-
-            for (int i = k + 1; i < baseArray.Length; i++)
-            {
-                int index = i + insertingArray.Length;
-                bigArray[index] = baseArray[i];
-            }
-
-            return bigArray;
+            WriteLine("Единый массив:");
+            for (int i = 0; i < n + m; i++) WriteLine($"[{i}] = {c[i]}");
         }
     }
 }
